@@ -1,3 +1,3 @@
 public interface WebScraper{
-    void scrape(string source) throws Exception;
+    void scrape(String source) throws Exception;
 }
