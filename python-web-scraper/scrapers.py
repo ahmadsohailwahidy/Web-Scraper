@@ -26,9 +26,9 @@ class QuoteScraper(WebScraper):
 
         for quote_box in soup.select("div.quote"):
 
-            quote = quote_box.select_one("span.text").get_text(strip=true)
+            quote = quote_box.select_one("span.text").get_text(strip=True)
 
-            author = quote_box.select_one("small.author").get_text(strip=true)
+            author = quote_box.select_one("small.author").get_text(strip=True)
 
             results.append({
                 "quote": quote,
@@ -55,7 +55,7 @@ class BookScraper(WebScraper):
 
             title = book_box.select_one("h3 a")["title"]
 
-            price = book_box.select_one("p.price_color").get_text(strip=true)
+            price = book_box.select_one("p.price_color").get_text(strip=True)
 
             results.append({
                 "title": title,
